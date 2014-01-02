@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nutrons 125</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nutrons team Official Page" />
+        <meta name="keywords"    contend="Nutrons,125,Team,Robotics,FRC"/>
+        <link rel="shorcut icon" href="img/logofull.png" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <style>
+            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');} 
+            .nutrons_font {font-family: nutronsfont; color: red;}
+        </style>
+        <script type="text/javascript">
+            function cdtd() {
+            	var frc = new Date("January 4, 2014 010:00:00");
+            	var now = new Date();
+				var checker = true;
+            	var timeDiff = frc.getTime() - now.getTime();
+            	if (timeDiff <= 0) {
+                	clearTimeout(timer);			
+            		// numbers are off
+            		checker = false;
+					document.getElementById("counter_title").innerHTML = "FRC in:";
+					document.getElementById("daysBox").innerHTML = " ";
+					document.getElementById("hoursBox").innerHTML = "No time! its ON!";
+					document.getElementById("minsBox").innerHTML = " ";
+					document.getElementById("secsBox").innerHTML = " ";
+					// labels are off
+					document.getElementById("days_l").innerHTML = " ";
+					document.getElementById("hours_l").innerHTML = " ";
+					document.getElementById("minutes_l").innerHTML = " ";
+					document.getElementById("seconds_l").innerHTML = " ";
+            	}
+				if(checker) {
+					document.getElementById("counter_title").innerHTML = "FRC in: ";
+					var seconds = Math.floor(timeDiff / 1000);
+					var minutes = Math.floor(seconds / 60);
+					var hours = Math.floor(minutes / 60);
+					var days = Math.floor(hours / 24);
+					
+					hours %= 24;
+					minutes %= 60;
+					seconds %= 60;
+					
+					// labels
+					document.getElementById("days_l").innerHTML = "Days ";
+					document.getElementById("hours_l").innerHTML = "Hours ";
+					document.getElementById("minutes_l").innerHTML = "Minutes ";
+					document.getElementById("seconds_l").innerHTML = "Seconds ";
+					// numbers
+					document.getElementById("daysBox").innerHTML = days;
+					document.getElementById("hoursBox").innerHTML = hours;
+					document.getElementById("minsBox").innerHTML = minutes;
+					document.getElementById("secsBox").innerHTML = seconds;
+					var timer = setTimeout('cdtd()',1000);
+				}
+            }
+
+        </script>				
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- espacio lol -->
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <a><img id="header_img" class="img-responsive" src="img/logofull.png"></a>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <h2 id="counter_title"></h2>
+                    </center>
+                    <div class="well">
+                        <center>
+                            <span class="numbers" id="daysBox"></span>
+                            <span id="days_l"></span>
+                            <span class="numbers" id="hoursBox"></span>
+                            <span id="hours_l"></span>
+                            <span class="numbers" id="minsBox"></span>
+                            <span id="minutes_l"></span>
+                            <span class="numbers" id="secsBox"></span>
+                            <span id="seconds_l"></span>
+                        </center>
+                    </div>
+                    <script type="text/javascript">cdtd();</script>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><b class="nutrons_font">125</b></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> Team <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="robots.html">Robots</a></li>
+                                <li><a href="aboutUs.html">About Us</a></li>
+                                <li><a href="sponsors.html">Sponsors</a></li>
+                                <li class="divider"></li>
+                                <li><a href="supportUs.html">Support Us!</a></li>
+                                <li><a href="scholarship.html">Scholarship</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="media.html"><span class="glyphicon glyphicon-film"></span> Media</a></li>
+                        <li><a href="askAnEngineer.html"><span class="glyphicon glyphicon-question-sign"></span> Ask an Engineer</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-tasks"></span> Twitter Feed</a></li>
+                        <li><a href="beantownBlitz.html"><span class="glyphicon glyphicon-fire"></span> Beantown Blitz</a></li>
+                        <li><a href="contactUs.html"><span class="glyphicon glyphicon-credit-card"></span> Contact Us</a></li>
+                    </ul>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-tasks"></span> Twitter Feed</h4>
+								</div>
+								<div class="modal-body">
+									<center>
+										<a class="twitter-timeline" href="https://twitter.com/nutrons" data-widget-id="412037343697051648">Tweets by @nutrons</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+									</center>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div id="slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/carousel/Boston_regional_winner_850x450.jpg">
+                                <div class="carousel-caption">
+                                    <h4>Boston Regional Winners</h4>
+                                    <p>Nutrons get 1st place in Boston regional</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/carousel/Robot_2013_850x450.jpg">
+                                <div class="carousel-caption">
+                                    <h4>presenting <em>"Fission"</em></h4>
+                                    <p>Our 2013 FRC Robot</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/carousel/125_Letters_850x450.jpg">
+                                <div class="carousel-caption">
+                                    <h4>Off-season training</h4>
+                                    <p>The Nutrons getting ready for FRC 2014</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#slider" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#slider" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="jumbotron">
+                        <center>
+                            <h2 class="nutrons_font">Nutrons 125</h2>
+                            <p id="color-gray">Since our founding in 1998 the Nutrons have been a staple of the New England <a href="http://www.usfirst.org/roboticsprograms/frc">FIRST community</a> with our winning robots and outreach programs</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                       <img src="img/info-squares/team.jpg">
+                        <center>
+                            <div class="caption">
+                                <h3>Team</h3>
+                                <p>We are not a team, we are a family</p>
+                                <p><a href="aboutUs.html" class="btn btn-danger" role="button">Learn More</a></p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/info-squares/FRC.jpg">
+                        <center>
+                            <div class="caption">
+                                <h3>FIRST</h3>
+                                <p>World wide robot compitition</p>
+                                <p><a href="http://www.usfirst.org/" class="btn btn-danger" role="button">Learn More</a></p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/info-squares/spon.png">
+                        <center>
+                            <div class="caption">
+                                <h3>Our sponsors</h3>
+                                <p>Our power source to engineer</p>
+                                <p><a href="sponsors.html" class="btn btn-danger" role="button">Learn More</a></p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container">
+			<span>
+				<a href="https://twitter.com/nutrons" class="twitter-follow-button" data-show-count="false">Follow @nutrons</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</span>
+		</div>
+		
+        <!--  FOOTER -->
+        <div class="container" >
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <center>
+                        <img  class="img-responsive" id="fi" src="img/sponsors/northeastern.png">
+                    </center>
+                </div>
+                <div class="col-md-6">
+                    <center>
+                        <img  class="img-responsive" id="fi" src="img/sponsors/NationalGrid.png">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img class="img-responsive" id="fi" src="img/sponsors/custommetal3de.png">
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img  class="img-responsive" id="fi" class="feder"src="img/sponsors/tsc_logo.png">
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img  class="img-responsive" id="fi" src="img/sponsors/PTC.png">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+            <center>
+                <p >Copyright &copy; 2014 Nutrons</p>
+            </center>
+        </div>
+        <!-- JS files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

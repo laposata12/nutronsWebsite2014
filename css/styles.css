@@ -1,0 +1,137 @@
+#header_img {
+	padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%;
+}
+
+#po{
+	height: 1px;
+
+	border-top-width: 50px;
+	border-top:outset;
+	border-top-style: solid;
+	margin-bottom: 2%;
+	color: #cccccc;
+   
+}
+
+#fi{
+/*
+	margin: 0% 3% 3% 3%;
+	opacity: 0.5;
+
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+*/
+}
+#fi:hover {
+	opacity: 1.0;
+}
+#counterclock {
+  margin-top: 30%;
+}
+
+.numbers {
+  font-size: 1.5em; 
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+#footer{
+	background: -moz-linear-gradient(left, #950000 , white, black);
+    font-color: white;
+}
+
+#color-gray {
+	color: #2a2a2a;
+}
+
+#contact-img {
+	margin-top: 20%;
+}
+
+}
+#personalizacion{
+	background: black;
+	border-radius: 0.5em;
+	box-shadow: rgba(255,255,255,0.2)5px 5px 10px inset;
+	display:inline-block;
+	margin: 0 0 6em 2%;
+	padding: 1em 1em 0;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	vertical-align: top;
+	
+}
+#personalizacion article{
+	background: rgba(255,255,255,0.9);
+	border-radius: 0.5em;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	color:#333;
+}
+#personalizacion h2{
+	margin-top: 0;
+
+}
+#personalizacion #fecha div
+{
+	background: #9f001c;
+	border:3px solid #ccc;
+	color:black;
+    font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+	height: 2em;
+	margin:0.5em 1%;
+	opacity:0.7;
+	transition: all 0.5s ease;
+	vertical-align: top;
+	width: 27%;
+}
+#personalizacion #fecha div:hover{
+	border:4px solid black;
+	opacity:1;
+	transform: scale(1.1);
+}
+
+#aboutUs-object {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-size: 1em;
+}
+#robots{
+	width:100%;
+}
+.affix{
+	position:fixed;
+	top:10px;
+}
+}
+#question{
+	font-size: 10em;
+}
+#iask{
+	width: 100%;
+	height: 400px;
+}
+#div1{
+	position: relative;z-index:1;
+}
+#div2{
+	position: relative;z-index:2;
+}
+#video_background { position: absolute; bottom: 0px; right: 0px; min-width: 100%; min-height: 100%; width: auto; height: 100; z-index: -1000; overflow: hidden; }
+
+#video_pattern { background-image: url(../images/pattern.png); position: fixed; opacity: 0.8; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1; }
+#reg{
+	display: none;
+}
+
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 1em; }
+
+}

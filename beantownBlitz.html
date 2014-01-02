@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nutrons 125</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nutrons team Official Page" />
+        <meta name="keywords"    contend="Nutrons,125,Team,Robotics,FRC"/>
+        <link rel="shorcut icon" href="img/logofull.png" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <style>
+            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');} 
+            .nutrons_font {font-family: nutronsfont; color: red;}
+            .background {
+            background: url(img/beantownBlitz/beantownBlitz.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
+        </style>
+        <script type="text/javascript">
+            function cdtd() {
+                var frc = new Date("June 1, 2014 07:00:00");
+                var now = new Date();
+                var timeDiff = frc.getTime() - now.getTime();
+                if (timeDiff <= 0) {
+                                clearTimeout(timer);
+                    document.write("Game is ON!!");
+                    // Run any code needed for countdown completion here
+                            }
+                var seconds = Math.floor(timeDiff / 1000);
+                var minutes = Math.floor(seconds / 60);
+                var hours = Math.floor(minutes / 60);
+                var days = Math.floor(hours / 24);
+                hours %= 24;
+                            minutes %= 60;
+                            seconds %= 60;
+                document.getElementById("daysBox").innerHTML = days;
+                document.getElementById("hoursBox").innerHTML = hours;
+                document.getElementById("minsBox").innerHTML = minutes;
+                document.getElementById("secsBox").innerHTML = seconds;
+                var timer = setTimeout('cdtd()',1000);
+            }
+        </script>
+        <script src="js/nuevo.js"></script>
+    </head>
+    <body class="background">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b class="nutrons_font"></b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span> Back to Nutrons site</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about"><span class="glyphicon glyphicon-pencil"></span> About</a></li>
+                    <li><a href="mailto:nutrons@gmail.com"><span class="glyphicon glyphicon-info-sign"></span> Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <center>
+                        <img style="width: 100%;" src="img/beantownBlitz/logo-beantownblitz">
+                    </center>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="well">
+                        <center>
+                            <span class="numbers" id="daysBox"></span>
+                            <span id="color-gray">Days</span>
+                            <span class="numbers" id="hoursBox"></span>
+                            <span id="color-gray">Hours</span>
+                            <span class="numbers" id="minsBox"></span>
+                            <span id="color-gray">Minutes</span>
+                            <span class="numbers" id="secsBox"></span>
+                            <span id="color-gray">Seconds</span>
+                        </center>
+                    </div>
+                    <br>
+                    <script type="text/javascript">cdtd();</script>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img style="margin-bottom:10px; " src="img/beantownBlitz/b3.jpg" class="img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <center>
+                            <h2>Offseason robotics event presented by the <span class="nutrons_font">Nutrons<span></h2>
+                            <hr>
+                            <p><a href="#signup" class="btn btn-lg btn-danger" role="button">Sign up!</a></p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top:10px;">
+            <div class="row">
+                <div class="col-md-5">
+                    <div style="margin-top: 2px;">
+                        <div class="well">
+                            <center>
+                                <a name="about"></a>
+                                <h1>About the Blitz</h1>
+                                <p style="color:black; height:100%;"class="lead">This will the tenth year running as Northeastern conducts its highly anticipated off season event. With the recent explosion of rookie teams, this will be a great opportunity to get some playing time and exposure. For the veterans, a time to trounce the competition.<strong></p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img  src="img\beantownBlitz\b1.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top:20px;">
+        <div class="row">     
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <center>Sign up!</center>
+                        <a name="signup"></a>
+                    </div>
+                    <div class="panel-body">
+                        <center>
+                        <div class="alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <strong>Oh snap!</strong> It's too early to register. Try later.
+                        </div>
+                    </center>
+                        <form role="form">
+                            <fieldset disabled>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Team name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Team number</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team number">
+                                <hr>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                    Rookie Team
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                    Returning Team
+                                </label>
+                            </div>
+                            <center>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Sign Up</button>
+                            </center>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+            <center>
+                <p style="color: white;">Copyright &copy; 2014 Nutrons</p>
+            </center>
+        </div>
+        <!-- JS files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
