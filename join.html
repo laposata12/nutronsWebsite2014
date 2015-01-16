@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Join!</title>
+    <style>
+      .wrap {
+        background-color: #c0392b;
+        padding: 30px;
+        border-radius: 10px;
+      }
+	  .background {
+            background: url(img/student_join/student_background.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
+    </style>
+  </head>
+  <body style="background-color: white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <center>
+                    <img style="width: 30%; padding-top: 10%;" src="img/logofull.png">
+                </center>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<center>
+					<h2><strong>Student Sign Up Form</strong></h2>
+					<h4>Please fill the following information in order be registered in the Nutrons Student List</h4>
+					<br>
+				</center>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+              <div class="wrap">
+                <form role="form" action="php/joinRegistration.php" method="post" style="color:white">
+                            <fieldset enable>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name" name="STUDENT_NAME">
+                            </div>
+                            <div class="form-group">
+                              <label>Last name</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last name" name="STUDENT_LASTNAME">
+                            </div>
+							<div class="form-group">
+                                <label>Grade</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name" name="STUDENT_GRADE">
+                            </div>
+                            <div class="form-group">
+                              <label>Email</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="student_email@example.com" name="STUDENT_EMAIL">
+                            </div>
+                            <div class="form-group">
+                              <label>What are you interested in doing?</label>
+                              <textarea style="height: 100px;"  type="text" class="form-control" id="exampleInputPassword1"  placeholder="What do you want to do? Learn? experience?" name="STUDENT_INTEREST"></textarea >
+                            </div>
+                            <center>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Sign Up</button>
+                            </center>
+                            </fieldset>
+                        </form>
+              </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+	<br>
+	<br>
+	<br>
+  </body>
+</html>

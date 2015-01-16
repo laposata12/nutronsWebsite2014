@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nutrons 125</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nutrons team Official Page" />
+        <meta name="keywords"    contend="Nutrons,125,Team,Robotics,FRC"/>
+        <link rel="shorcut icon" href="img/logofull.png" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <style>
+            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');}
+            .nutrons_font {font-family: nutronsfont; color: red;}
+            .background {
+            background: url(beantownBlitz.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="background">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b class="nutrons_font"></b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span> Back to Nutrons site</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="mailto:nutrons@gmail.com"><span class="glyphicon glyphicon-info-sign"></span> Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+              <center>
+                  <img style="width: 100%;" src="logo-beantownblitz.png">
+              </center>
+            </div>
+            <div class="col-md-3">
+            </div>
+          </div>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><center><b>Beantown blitz 2014</b></center></div>
+                  <div class="panel-body">
+                    <p>Please write your team name and confirmation number in the box below:</p>
+                    <form role="form" action="php/confirm.php" method="post">
+                        <fieldset enable>
+                        <div class="form-group">
+                            <label>Team name:</label>
+                            <input type="text" class="form-control" placeholder="Enter Team name" name="TEAM_NAME">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmation code:</label>
+                            <input type="text" class="form-control" placeholder="Enter Confirmation code" name="CONFIRM_CODE">
+                        </div>
+                        <center>
+                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Confirm</button>
+                        </center>
+                        </fieldset>
+                    </form>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="well">
+                  <center>
+                  <p><b>Tweet</b> to us! use the <b>#beantownBliz</b></p>
+                </center>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23beantownBlitz" data-widget-id="457282929274523648">Tweets about "#beantownBlitz"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <center>
+                <p style="color: white;">Copyright &copy; 2014 Nutrons</p>
+            </center>
+        </div>
+        <!-- JS files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

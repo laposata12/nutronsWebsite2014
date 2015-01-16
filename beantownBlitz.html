@@ -9,26 +9,33 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <style>
-            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');} 
+            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');}
             .nutrons_font {font-family: nutronsfont; color: red;}
             .background {
-            background: url(img/beantownBlitz/beantownBlitz.jpg) no-repeat center center fixed; 
+            background: url(img/beantownBlitz/beantownBlitz.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
             }
+            .title-challenge {
+            	color:white;
+            	font-weight: bold;
+            	font-size: 500%
+            }
+            .btn-group {
+              padding-bottom: 15px;
+            }
         </style>
         <script type="text/javascript">
             function cdtd() {
-                var frc = new Date("June 1, 2014 07:00:00");
+                var frc = new Date("June 28, 2014 07:00:00");
                 var now = new Date();
                 var timeDiff = frc.getTime() - now.getTime();
                 if (timeDiff <= 0) {
                                 clearTimeout(timer);
                     document.write("Game is ON!!");
-                    // Run any code needed for countdown completion here
-                            }
+                  }
                 var seconds = Math.floor(timeDiff / 1000);
                 var minutes = Math.floor(seconds / 60);
                 var hours = Math.floor(minutes / 60);
@@ -72,7 +79,8 @@
                 </div>
                 <div class="col-md-6">
                     <center>
-                        <img style="width: 100%;" src="img/beantownBlitz/logo-beantownblitz">
+                        <!-- img/beantownBlitz/logo-beantownblitz.png -->
+                        <img style="width: 100%;" src="picpic.png">
                     </center>
                 </div>
                 <div class="col-md-3">
@@ -103,42 +111,209 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img style="margin-bottom:10px; " src="img/beantownBlitz/b3.jpg" class="img-thumbnail">
-                </div>
-                <div class="col-md-6">
-                    <div class="jumbotron">
-                        <center>
-                            <h2>Offseason robotics event presented by the <span class="nutrons_font">Nutrons<span></h2>
-                            <hr>
-                            <p><a href="#signup" class="btn btn-lg btn-danger" role="button">Sign up!</a></p>
-                        </center>
-                    </div>
-                </div>
-            </div>
+        	<div class="row">
+        		<center>
+        			<h1 class="title-challenge">Ready for the <b style="color:red;">challenge?</b></h1>
+        		</center>
+        	</div>
         </div>
-        <div class="container" style="margin-top:10px;">
-            <div class="row">
-                <div class="col-md-5">
-                    <div style="margin-top: 2px;">
-                        <div class="well">
-                            <center>
-                                <a name="about"></a>
-                                <h1>About the Blitz</h1>
-                                <p style="color:black; height:100%;"class="lead">This will the tenth year running as Northeastern conducts its highly anticipated off season event. With the recent explosion of rookie teams, this will be a great opportunity to get some playing time and exposure. For the veterans, a time to trounce the competition.<strong></p>
-                            </center>
-                        </div>
-                    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <center>
+                <div class="btn-group btn-group-lg">
+                  <a type="button" href="more_i/CampusMap.pdf" class="btn btn-default">Map</a>
+                  <a type="button" href="more_i/PizzaOrder2014.pdf" class="btn btn-default">Pizza Order</a>
+                  <a type="button" href="more_i/BTB2014Flyer.pdf"class="btn btn-default">More info</a>
+                  <a type="button" href="#signup" class="btn btn-danger">Register</a>
                 </div>
-                <div class="col-md-7">
-                    <img  src="img\beantownBlitz\b1.jpg" class="img-thumbnail">
-                </div>
+              </center>
             </div>
+          </div>
+        </div>
+       	<div class="container">
+       		<div class="row">
+       			<div class="col-md-12">
+       				<div class="panel panel-default">
+       					<div class="panel-heading">Official Team list</div>
+       					<table class="table">
+       						<tr>
+       							<th>Team #</th>
+       							<th>Team name</th>
+       							<th>From</th>
+       						</tr>
+       						<tr>
+       							<td>125</td>
+       							<td>NUTRONS</td>
+       							<td>Boston, MA</td>
+       						</tr>
+       						<tr>
+       							<td>1965</td>
+       							<td>Firebirds</td>
+       							<td>Brighton, MA</td>
+       						</tr>
+       						<tr>
+       							<td>2423</td>
+       							<td>The KwarQs</td>
+       							<td>Watertown, MA</td>
+       						</tr>
+       						<tr>
+       							<td>1071</td>
+       							<td>Team Max</td>
+       							<td>Wolcott, CT</td>
+       						</tr>
+       						<tr>
+       							<td>4555</td>
+       							<td>Sprocketology</td>
+       							<td>Skowhegan, ME</td>
+       						</tr>
+       						<tr>
+       							<td>2648</td>
+       							<td>Infinite Loop</td>
+       							<td>Oakland, ME</td>
+       						</tr>
+       						<tr>
+       							<td>1687</td>
+       							<td>Highlander Robotics</td>
+       							<td>Worcester, MA</td>
+       						</tr>
+       						<tr>
+       							<td>4761</td>
+       							<td>Robockets</td>
+       							<td>Reading, MA</td>
+       						</tr>
+       						<tr>
+       							<td>1058</td>
+       							<td>PVC Pirates</td>
+       							<td>Londonderry, NH</td>
+       						</tr>
+       						<tr>
+       							<td>172</td>
+       							<td>Northen Force</td>
+       							<td>FalmouthGorham,ME</td>
+       						</tr>
+       						<tr>
+       							<td>1519</td>
+       							<td>Mecahnical Mayhem</td>
+       							<td>Milford, NH</td>
+       						</tr>
+       						<tr>
+       							<td>69</td>
+       							<td>HYPER</td>
+       							<td>Quincy, MA</td>
+       						</tr>
+       						<tr>
+       							<td>78</td>
+       							<td>Air Strike</td>
+       							<td>Newport County, RI</td>
+       						</tr>
+       						<tr>
+       							<td>839</td>
+       							<td>Rosie Robotics</td>
+       							<td>Agawam, MA</td>
+       						</tr>
+       						<tr>
+       							<td>3461</td>
+       							<td>Operation PEACCE</td>
+       							<td>Torrington, CT</td>
+       						</tr>
+       						<tr>
+       							<td>121</td>
+       							<td>Rhode Warriors </td>
+       							<td>Newport County, RI</td>
+       						</tr>
+       						<tr>
+       							<td>1511</td>
+       							<td>Rolling Thunder</td>
+       							<td>Penfield, NY</td>
+       						</tr>
+       						<tr>
+       							<td>1073</td>
+       							<td>The Force Team</td>
+       							<td>Hollis, NH</td>
+       						</tr>
+       						<tr>
+       							<td>1100</td>
+       							<td>T-Hawks</td>
+       							<td>Northboro, MA</td>
+       						</tr>
+       						<tr>
+       							<td>88</td>
+       							<td>Tjsquared</td>
+       							<td>Bridgewater, MA</td>
+       						</tr>
+       						<tr>
+       							<td>4473</td>
+       							<td>REM Delta Prime Robotics</td>
+       							<td>Farmingdale, ME</td>
+       						</tr>
+       						<tr>
+       							<td>1768</td>
+       							<td>Nashoba Robotics</td>
+       							<td>Bolton, MA</td>
+       						</tr>
+       						<tr>
+       							<td>175</td>
+       							<td>Buzz Robotics</td>
+       							<td>Enfield, CT</td>
+       						</tr>
+       						<tr>
+       							<td>2788</td>
+       							<td>Ligerbots</td>
+       							<td>Newton, Ma</td>
+       						</tr>
+       						<tr>
+       							<td>195</td>
+       							<td>CyberKnights</td>
+       							<td>Southington, CT</td>
+       						</tr>
+       						<tr>
+       							<td>4048</td>
+       							<td>Redshift</td>
+       							<td>Westborough, MA</td>
+       						</tr>
+       						<tr>
+       							<td>126</td>
+       							<td>Gael Force</td>
+       							<td>Clinton, MA</td>
+       						</tr>
+
+       					</table>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+         <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well">
+                <center>
+                  <h2>Food drive</h2>
+                  <div class="lead">This year the Blitz is teaming up with the Greater Boston Food Bank (GBFB) to run a food drive! We are asking every participating team to bring 15 lb of food for a donation, which should result in over 400 lb of donated food! Click the link below and scroll down to check out the "Food Donation Guidelines," which will give a list of acceptable food to bring. Also feel free to explore the site to learn how the GBFB is working to help hungry families in our community!</div>
+                  <div class="lead"><a href="http://www.gbfb.org/how-to-help/food-drives.php">www.gbfb.org/how-to-help/food-drives.php</a></div>
+                </center>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">
+                <center>
+                  <h2>Items you can donate</h2>
+                </center>
+                <div class="lead">
+                  <p>Dairy: Milk - dried, evaporated, and boxed (such as Parmalat)</p>
+                  <p>Protein: Beef stew, nuts, peanut butter, beans, and peas (dried or canned), chili, tuna fish, chicken, salmon (canned)</p>
+                  <p>Vegetables: Tomato sauce, diced tomatoes, spaghetti sauce, vegetables (canned), tomato juice</p>
+                  <p>Fruit: Raisins and other dried fruit, applesauce, any canned fruit in its own juice</p>
+                  <p>Grains: Crackers, oatmeal, whole grain rice, all types of pasta, ready to eat low sugar/high fiber cereal (Cheerios, Raisin Bran, etc.)</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="container" style="margin-top:20px;">
-        <div class="row">     
+        <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -147,37 +322,44 @@
                     </div>
                     <div class="panel-body">
                         <center>
-                        <div class="alert alert-danger alert-dismissable">
+                        <div class="alert alert-success alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>Oh snap!</strong> It's too early to register. Try later.
+                            <strong>Awesome! </strong> What are you waiting for? Register now!
                         </div>
                     </center>
-                        <form role="form">
-                            <fieldset disabled>
+                        <form role="form" action="php/blitzRegistration.php" method="post">
+                            <fieldset enable>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Team name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team name">
+                                <label>Team name</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team name" name="TEAM_NAME">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Team number</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team number">
-                                <hr>
+                                <label>Team number</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Team number" name="TEAM_NUMBER">
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                                    Rookie Team
-                                </label>
+                            <div class="form-group">
+                              <label>Town/City</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Town/city" name="TOWN">
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
-                                    Returning Team
-                                </label>
+                            <div class="form-group">
+                              <label>State</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="State" name="STATE">
+                            </div>
+                            <div class="form-group">
+                              <label>School(s)</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Schools" name="SCHOOLS">
+                            </div>
+                            <div class="form-group">
+                              <label>Adult mentor name</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mentor name" name="MENTOR_NAME">
+                            </div>
+                            <div class="form-group">
+                              <label>Adult mentor phone number</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone number" name="PHONE_NUMBER">
+                            </div>
+                            <div class="form-group">
+                                <label>Adult mentor Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="TEAM_EMAIL">
                             </div>
                             <center>
                                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Sign Up</button>
@@ -186,9 +368,7 @@
                         </form>
                     </div>
                 </div>
-                
-            </div>
-        </div>
+
         <div class="container">
             <hr>
             <center>
