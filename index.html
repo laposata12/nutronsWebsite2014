@@ -9,20 +9,20 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <style>
-            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');} 
+            @font-face {font-family: nutronsfont; src: url('fonts/nutrons_font.TTF'), url('fonts/SofachromeRg-Italic.woff');}
             .nutrons_font {font-family: nutronsfont; color: red;}
         </style>
         <script type="text/javascript">
             function cdtd() {
-            	var frc = new Date("April 23, 2014 15:00:00");
+            	var frc = new Date("Februry 17, 2015 00:00:00");
             	var now = new Date();
 				var checker = true;
             	var timeDiff = frc.getTime() - now.getTime();
             	if (timeDiff <= 0) {
-                	clearTimeout(timer);			
+                	clearTimeout(timer);
             		// numbers are off
             		checker = false;
-					document.getElementById("counter_title").innerHTML = "FRC World Championship in:";
+					document.getElementById("counter_title").innerHTML = "Build Seasons ends:";
 					document.getElementById("daysBox").innerHTML = " ";
 					document.getElementById("hoursBox").innerHTML = "No time! It's ON!";
 					document.getElementById("minsBox").innerHTML = " ";
@@ -39,11 +39,11 @@
 					var minutes = Math.floor(seconds / 60);
 					var hours = Math.floor(minutes / 60);
 					var days = Math.floor(hours / 24);
-					
+
 					hours %= 24;
 					minutes %= 60;
 					seconds %= 60;
-					
+
 					// labels
 					document.getElementById("days_l").innerHTML = "Days ";
 					document.getElementById("hours_l").innerHTML = "Hours ";
@@ -58,23 +58,28 @@
 				}
             }
 
-        </script>				
+        </script>
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                	<center class="visible-lg"style="padding-left:80px; padding-top: 30px;" >
-                    <div class="panel panel-default">
-  						<!-- Default panel contents -->
-  						<!-- List group -->
-  						<ul class="list-group">
-    						<li class="list-group-item">Northeastern University Distric event</li>
-    						<li class="list-group-item">Groton Distric Event</li>
-    						<li class="list-group-item">Rhode Island Distric event</li>
-  						</ul>
-					</div>
-					</center>
+                  <center>
+                    <h2 id="counter_title"></h2>
+                  </center>
+                  <div class="well">
+                    <center>
+                      <span class="numbers" id="daysBox"></span>
+                      <span id="days_l"></span>
+                      <span class="numbers" id="hoursBox"></span>
+                      <span id="hours_l"></span>
+                      <span class="numbers" id="minsBox"></span>
+                      <span id="minutes_l"></span>
+                      <span class="numbers" id="secsBox"></span>
+                      <span id="seconds_l"></span>
+                    </center>
+                  </div>
+                  <script type="text/javascript">cdtd();</script>
                 </div>
                 <div class="col-md-4">
                     <center>
@@ -82,22 +87,7 @@
                     </center>
                 </div>
                 <div class="col-md-4">
-                    <center>
-                        <h2 id="counter_title"></h2>
-                    </center>
-                    <div class="well">
-                        <center>
-                            <span class="numbers" id="daysBox"></span>
-                            <span id="days_l"></span>
-                            <span class="numbers" id="hoursBox"></span>
-                            <span id="hours_l"></span>
-                            <span class="numbers" id="minsBox"></span>
-                            <span id="minutes_l"></span>
-                            <span class="numbers" id="secsBox"></span>
-                            <span id="seconds_l"></span>
-                        </center>
-                    </div>
-                    <script type="text/javascript">cdtd();</script>
+
                 </div>
             </div>
         </div>
@@ -179,7 +169,7 @@
                                     <h4>presenting <em>"Fission"</em></h4>
                                     <p>Our 2013 FRC Robot</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <a class="left carousel-control" href="#slider" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -199,7 +189,7 @@
                 </div>
             </div>
         </div>
-		
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -240,14 +230,14 @@
                 </div>
             </div>
         </div>
-		
+
 		<div class="container">
 			<span>
 				<a href="https://twitter.com/nutrons" class="twitter-follow-button" data-show-count="false">Follow @nutrons</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			</span>
 		</div>
-		
+
         <!--  FOOTER -->
         <div class="container" >
             <hr>
