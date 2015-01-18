@@ -34,7 +34,7 @@
 					document.getElementById("seconds_l").innerHTML = " ";
             	}
 				if(checker) {
-					document.getElementById("counter_title").innerHTML = "FRC World Championship in:";
+					document.getElementById("counter_title").innerHTML = "FRC Build Season Ends in:";
 					var seconds = Math.floor(timeDiff / 1000);
 					var minutes = Math.floor(seconds / 60);
 					var hours = Math.floor(minutes / 60);
@@ -62,8 +62,9 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+			<center>
+            <!---<div class="row">
+                div class="col-md-4">
                   <center>
                     <h2 id="counter_title"></h2>
                   </center>
@@ -78,18 +79,17 @@
                       <span class="numbers" id="secsBox"></span>
                       <span id="seconds_l"></span>
                     </center>
-                  </div>
+                  </div
                   <script type="text/javascript">cdtd();</script>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <a><img id="header_img" class="img-responsive" src="img/logofull.png"></a>
-                    </center>
-                </div>
-                <div class="col-md-4">
-
+                </div>-->
+				
+                <div style = "display:block;overflow:hidden;margin:auto" >
+                    
+                        <img id="header_img" class="img-responsive" src="img/logofull.png">
+                   
                 </div>
             </div>
+			</center>
         </div>
         <div class="container">
             <nav class="navbar navbar-default" role="navigation">
@@ -120,7 +120,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
 						<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-tasks"></span> Twitter Feed</a></li>
-                        <li><a href="beantownBlitz.html"><span class="glyphicon glyphicon-fire"></span> Beantown Blitz</a></li>
+                        <!--li><a href="beantownBlitz.html"><span class="glyphicon glyphicon-fire"></span> Beantown Blitz</a></li-->
                         <li><a href="contactUs.html"><span class="glyphicon glyphicon-credit-card"></span> Contact Us</a></li>
                     </ul>
 					<!-- Modal -->
@@ -198,7 +198,7 @@
                         <center>
                             <div class="caption">
                                 <h3>Team</h3>
-                                <p>We are not a team, we are a family</p>
+                                <p>We are not a team; we are a family.</p>
                                 <p><a href="aboutUs.html" class="btn btn-danger" role="button">Learn More</a></p>
                             </div>
                         </center>
@@ -210,7 +210,7 @@
                         <center>
                             <div class="caption">
                                 <h3>FIRST</h3>
-                                <p>World wide robot compitition</p>
+                                <p>Worldwide Robotics competition</p>
                                 <p><a href="http://www.usfirst.org/" class="btn btn-danger" role="button">Learn More</a></p>
                             </div>
                         </center>
@@ -221,8 +221,8 @@
                         <img src="img/info-squares/spon.png">
                         <center>
                             <div class="caption">
-                                <h3>Our sponsors</h3>
-                                <p>Our power source to engineer</p>
+                                <h3>Our Sponsors</h3>
+                                <p>Our power source to engineer.</p>
                                 <p><a href="sponsors.html" class="btn btn-danger" role="button">Learn More</a></p>
                             </div>
                         </center>
